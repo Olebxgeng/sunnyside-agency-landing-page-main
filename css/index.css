@@ -63,6 +63,7 @@ body{
     color: var(--clr-neutral-greyblue);
     letter-spacing: 0.1875rem;
     margin: 0 auto 5em;
+    font-size: 1.25rem;
 }
 .testimonials p{
     color: var(--clr-neutral-vdrkgreyblue);
@@ -70,6 +71,25 @@ body{
 }
 
 /*---NAVIGATION---*/
+/* .menu__bar{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    height: 30px;
+    width: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color:hsla(0, 0%, 100%, 0.871);
+    border-radius: 10px;
+   
+} */
 .top-nav{
     display: flex;
     justify-content: space-between;
@@ -122,7 +142,10 @@ header{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: auto 50%;
+    grid-template-columns: 50%;
+    grid-template-areas:     
+    "y egg"
+    "cup r";
     background-color: rgb(254, 248, 239);
  }
 
@@ -135,10 +158,18 @@ header{
     font-size: var(--fs-regular);
     width: 60%;
 }
+.container-yellow{
+    grid-area: y;
+}
+.container-red{
+    grid-area: r;
+}
 .yellow-img{
+    grid-area: egg;
     background-image: url("../images/desktop/image-transform.jpg");
 }
 .red-img{
+    grid-area: cup;
     background-image: url("../images/desktop/image-stand-out.jpg");
 }
 .yellow-img, .red-img{
@@ -210,11 +241,11 @@ header{
 }
 .img-grid{
     display: flex;
+    height: 400px;
     width: 100%;
 }
 .img-grid img{
-    /* width: 400px; */
-    height: 500px;
+    width: 25%;
 }
 /*--FOOTER--*/
 footer{

@@ -17,12 +17,26 @@
     <section class="top-nav">
       <img class="logo" src="images/logo.svg" alt="logo">
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#" class="nav-contact">Contact</a></li>
-        </ul>
+          <div class="menu-mobile">
+            <div class="menu__bar" onclick="activeClick()">
+  
+              <div class="menu__line1 line"></div>
+              <div class="menu__line2 line"></div>
+              <div class="menu__line3 line"></div>
+  
+            </div>
+  
+            <ul class="nav-items">
+              <li><a class="nav__link link" href="#">About</a></li>
+              <li><a class="nav__link link1" href="#">Services</a></li>
+              <li><a class="nav__link link2" href="#">Projects</a></li>
+              <li><a class="nav__link link3 nav-contact" href="#">Contact</a></li>
+            </ul>
+  
+            <div class="menu__bg"></div>
+       
+          </div>
+
       </nav>
     </section>
     <section>
@@ -63,7 +77,7 @@
 
       <section class="photography">
         <h3>Photography</h3>
-        <p class="product-info">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <p class="product-info ">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </section>
     </section>
 
@@ -74,7 +88,7 @@
           <img src="images/image-emily.jpg"alt="Emily Selfie">
           <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
           <h3 class="name">Emily R.</h3>
-          <p>Marketing Directo</p>
+          <p>Marketing Director</p>
         </section>
 
         <section>
@@ -121,5 +135,6 @@
       Coded by <a href="#">Olebogeng</a>.
     </section>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
