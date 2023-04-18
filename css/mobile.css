@@ -26,28 +26,36 @@
     }
 /*---TYPOGRAPHY---*/
     body{
-        width: 100%;
+        width: 100vw;
     }
     .design-container .product-info{
-        width: 300px;
+        width: 150px;
     }
     .ct-title{
-        margin: 0 auto 3em;
+        width: 150px;
+        margin: 0 0 3em;
         color: var(--clr-neutral-greyblue);
         letter-spacing: 0.1875rem;
         font-size: 1.25rem;
+        text-align: center;
+        
     }
     .testimonials p{
-        width: 300px;
+        width: 250px;
         margin: 30px;
         line-height: 1.563rem;
         color: var(--clr-neutral-vdrkgreyblue);
         
     }
+    .container-yellow, .container-red{
+        text-align: center; 
+        width: 85vw;
+    }
     /*--LAYOUT--*/
     header{
         background-image: url("../images/mobile/image-header.jpg");
         height: 100vh;
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
@@ -75,17 +83,21 @@
         
         height: 400px;
         width: 300px;
+        padding: 0;
     }
     .nav__link{
+        font-family: var(--ff-accent);
         margin: 0;
         color: hsl(232, 10%, 55%);
         transition: 0.7s ease-in-out;
         opacity: 0;
-
+        border-radius: 25px;
+        padding: 5px 10px;
     }
 
     .nav__link:hover{
         background-color: hsl(51, 100%, 49%);
+        color: var(--clr-neutral-white);
     }
     .grid-container{
         display: grid;
@@ -120,7 +132,7 @@
         margin-bottom: 0;
     }
     .graphic-design{
-        min-height: 600px;
+        min-height: 700px;
         background: url("../images/mobile/image-graphic-design.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -128,19 +140,24 @@
         
     }
     .photography{
-        min-height: 600px;
+        min-height: 700px;
         background: url("../images/mobile/image-photography.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--clr-primary-drkblue);
-        
     }
-
+    .client-testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .testimonials{
         display: flex;
         flex-direction: column;
         gap: 1.5em;
         align-items: center;
+        text-align: center;
+        justify-content: center;
     }
     .testimonials img{
         border-radius: 50%;
@@ -182,7 +199,6 @@
         visibility: visible;
         height: 400px;
         width: 300px;
-    
     }
 
     .activeOp{
