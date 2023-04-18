@@ -1,0 +1,33 @@
+@media(max-width: 750px){
+    /*---ROOT---*/
+:root{
+    --clr-primary-red: hsl(7, 99%, 70%);
+    --clr-primary-ylw: hsl(51, 100%, 49%);
+    --clr-primary-cyn: hsl(167, 40%, 24%);
+    --clr-primary-drkblue: hsl(198, 62%, 26%);
+    --clr-primary-drkcyn: hsl(168, 34%, 41%);
+
+    --clr-neutral-drkblue: hsl(212, 27%, 19%);
+    --clr-neutral-darkgreyblue: hsl(213, 9%, 39%);
+    --clr-neutral-vdrkgreyblue: hsl(232, 10%, 55%);
+    --clr-neutral-greyblue: hsl(210, 4%, 67%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --clr-attribution: hsl(228, 45%, 44%);
+
+    --ff-accent: 'Fraunces', serif;
+    --ff-base: 'Barlow', sans-serif;
+    
+    --fw-regular: 500;
+    --fw-bold-1: 700;
+    --fw-bold-2: 900;
+    
+    --fs-regular:  1.125rem;
+}
+/*--LAYOUT--*/
+.grid-container{
+    display: grid;
+    grid-template-rows: auto  auto;
+    background-color: rgb(254, 248, 239);
+ }
+}
