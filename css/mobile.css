@@ -95,7 +95,7 @@
         padding: 5px 10px;
     }
 
-    .nav__link:hover{
+    .nav__link:focus{
         background-color: hsl(51, 100%, 49%);
         color: var(--clr-neutral-white);
     }
